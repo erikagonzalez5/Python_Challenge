@@ -39,14 +39,12 @@ with open(csvpath, 'r') as csvfile:
         revenue.append(row[1])
         totalRevenue = totalRevenue +int(row[1])
 
-#calculate changes and average in profits
+#calculate changes in profits
         profitLossChange = int(row[1]) - initialProfit
         monthChanges.append(profitLossChange)
         initialProfit = int(row[1])
 
-        #revenueChangeList = revenueChangeList + [revenueChange]
-
-        # monthChanges = monthChanges + [row[0]]
+#greatest increase and decrease
 
         if int(row[1]) > greatestIncrease:
                 greatestIncrease = int(row[1])
@@ -56,7 +54,7 @@ with open(csvpath, 'r') as csvfile:
                 greatestDecrease = int(row[1])
                 greatestMonthD = row[0]
 
-
+#average changes
         averageChanges = sum(monthChanges) / len(monthChanges)
 
 #finding maximimum and minimum changes in profits
