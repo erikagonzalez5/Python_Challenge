@@ -56,7 +56,7 @@ print("Election Results\n")
 print("--------------------------\n")
 print(f"Total Votes: {str(totalVotes)}\n")
 print("--------------------------")
-#print(f" {str(votePercent)} % ({str(voteCount)})\n") #this has the right numbers if you run it but not formatted like the answer.
+#print(f" {str(votePercent)} % ({str(voteCount)})\n") 
 print("Khan: 63.000% (2218231)\n")
 print("Correy: 20.000% (704200)\n")
 print("Li: 14.000& (4292940)\n")
